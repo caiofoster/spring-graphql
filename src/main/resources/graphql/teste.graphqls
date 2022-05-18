@@ -1,0 +1,10 @@
+type Calculo {
+    retorno: Int!
+    servidor: String!
+}
+
+
+# The Root Query for the application
+type Query {
+    calcular(valA: Int, valB: Int, valC: Int): Calculo!
+}
